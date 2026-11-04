@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    @apply bg-[#faf8f4] text-[#1b1b19] antialiased;
+  }
+
+  body {
+    font-family:
+      ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif;
+  }
+
+  /* Keyboard focus must always be visible, on any background. */
+  :focus-visible {
+    outline: 3px solid #0f5257;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: #d9e8e4;
+    color: #10201d;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+  }
+
+  /* Skip link: hidden until focused. */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 50;
+  }
+
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background: #ffffff;
+    border: 2px solid #0f5257;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+}
