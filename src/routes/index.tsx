@@ -359,9 +359,10 @@ function Cover() {
 
       <div className="rounded-xl border border-[#d8d2c6] bg-white p-5 sm:p-7">
         <p className="max-w-2xl text-base leading-relaxed text-[#3b3833]">
-          Give to Utilities. Your gift joins the pool that pays verified
-          shutoff notices in the pilot city. It is never attached to a named
-          household.
+          Give to Utilities. On the partner charity's donation page the
+          Utilities fund is pre-selected, and the charity allocates what it
+          receives under the published rules. A gift is never attached to a
+          named household.
         </p>
 
         <fieldset className="mt-6">
